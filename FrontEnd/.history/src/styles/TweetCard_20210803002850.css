@@ -1,0 +1,80 @@
+
+
+.tweet-card {
+    padding              : 1rem;
+    display              : grid;
+    grid-template-columns: 1fr 9fr;
+    border-top           : 0.5px solid var(--border);
+
+}
+
+.left{
+    padding: 0 1rem;
+    margin-top: 25px;
+}
+
+.tweet-card-shotoniphone{
+    padding-left: 1rem;
+}
+
+.tweet-card-time {
+    display:inline-block;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color    : var(--grey);
+}
+
+.tweet-card, .right {
+    padding: 0 1rem;
+    margin-top: 10px;
+}
+
+.tweet-card .tweet-card-head .tweet-card-name {
+    font-size    : 1.6rem;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.tweet-card .tweet-card-head .tweet-card-name:hover {
+    text-decoration: underline;
+}
+
+.tweet-card-handle {
+    font-size    : 1.4rem;
+    padding-right: 1rem;
+    font-weight: lighter;
+    color: lightgray;
+}
+
+.tweet-card .tweet-card-body .tweet-card-content p {
+    font-size : 1.5rem;
+    margin-top: .5rem;
+}
+
+.tweet-card .tweet-card-body .tweet-card-image {
+    margin-top: 2rem;
+}
+
+.tweet-card .tweet-card-body .tweet-card-image img {
+    width        : 100%;
+    border-radius: 20px;
+}
+
+.tweet-card .tweet-card-footer {
+    padding-right  : 10rem;
+    display        : flex;
+    justify-content: space-between;
+    padding-top    : 1rem;
+}
+
+.tweet-card .tweet-card-footer svg {
+    fill : var(--grey);
+    width: 2.5rem;
+}
+
+.tweet-card .tweet-card-footer .tweet-cars-icon {
+    line-height : 2;
+    font-size   : 1.5REM;
+    color       : var(--grey);
+    padding-left: 1rem;
+}
