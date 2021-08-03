@@ -9,7 +9,7 @@ export const FollowSuggestionCard = ({ whoToFollow }) => {
         //     <p className="trend-tweet-count m-0">{follow.tweets}</p>
         // </div>
         <div className="who-to-follow">
-            <div className="left" style = {{marginTop:2}}>
+            <div className="left" style = {{marginTop:-5}}>
                 <SmallAvatar width="48" image={whoToFollow.image} />
             </div>
             <div className="middle">

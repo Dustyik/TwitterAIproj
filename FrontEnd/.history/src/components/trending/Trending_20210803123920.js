@@ -19,12 +19,11 @@ export const Trending = () => {
                 </div>
                 <div
                 style = {{
-                    marginTop:"2rem",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center"
-                }}
-            >   
+             }}
+            >
            
             
             <Button 

@@ -17,14 +17,26 @@ export const Trending = () => {
                 <TrendsList />
                  
                 </div>
-                <div
-                style = {{
-                    marginTop:"2rem",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center"
-                }}
-            >   
+              
+                <div className="follow-list">
+                    <FollowSuggestionsList />
+                </div>
+               
+
+    
+
+ 
+
+            <div>
+                &nbsp;
+            </div>
+            <div
+             style = {{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+             }}
+            >
            
             
             <Button 
@@ -32,12 +44,6 @@ export const Trending = () => {
                 Apply Filter
             </Button>
             </div>
-              
-                <div className="follow-list">
-                    <FollowSuggestionsList />
-                </div>
-
-        
             </div>
         </>
     )
