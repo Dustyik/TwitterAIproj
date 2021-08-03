@@ -40,8 +40,6 @@
 
 .trends-for-you {
     padding: 1rem;
-    text-align: center;
-    vertical-align: middle;
 }
 
 .trends-for-you svg {
@@ -60,12 +58,12 @@
 }
 
 .trends-topic {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color    : var(--grey);
 }
 
 .trend-tweet-count {
-    font-size: 1.3rem;
+    font-size: 1.75rem;
     color    : var(--grey);
 }
 

@@ -3,8 +3,6 @@ import '../../styles/Trending.css';
 import { SearchIcon } from '../../images/svg/svgs'
 import { TrendsList } from './TrendsList';
 import { FollowSuggestionsList } from './FollowSuggestionsList';
-import { Button } from '@material-ui/core';
-
 
 
 export const Trending = () => {
@@ -13,9 +11,9 @@ export const Trending = () => {
             <div>
 
                 <div className="trends-list m-0">
-                  
-                <TrendsList />
-                 
+                    {/*
+                    <TrendsList />
+                    */}
                 </div>
                 {/*
                 <div className="follow-list">
@@ -23,27 +21,24 @@ export const Trending = () => {
                 </div>
                 */}
 
-    
+            <span>
+                Tune the hyperparameters!
+            </span>
 
  
 
             <div>
                 &nbsp;
             </div>
-            <div
-             style = {{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-             }}
-            >
-           
+            <div>
+                &nbsp;
+            </div>
             
             <Button 
                 variant="contained" color="primary">
                 Apply Filter
             </Button>
-            </div>
+
             </div>
         </>
     )

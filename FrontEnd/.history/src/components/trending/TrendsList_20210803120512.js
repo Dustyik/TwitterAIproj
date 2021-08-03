@@ -6,25 +6,25 @@ export const TrendsList = () => {
     const trends = [
         {
             name: '#Hyperparameter 1',
-            topic: 'Description',
+            topic: 'description',
             tweets: '3,700k'
         },
         {
             name: '#Hyperparameter 2',
-            topic: 'Description',
+            topic: 'description',
             tweets: '37k'
         }, {
             name: '#Hyperparameter 3',
-            topic: 'Description',
+            topic: 'description',
             tweets: '3,267'
         },
         {
             name: '#Hyperparameter 4',
-            topic: 'Description',
+            topic: 'description',
             tweets: '27k'
         }, {
             name: '#Hyperparameter 5',
-            topic: 'Description',
+            topic: 'description',
             tweets: '481k'
         }
     ]

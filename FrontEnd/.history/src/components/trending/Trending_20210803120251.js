@@ -30,20 +30,15 @@ export const Trending = () => {
             <div>
                 &nbsp;
             </div>
-            <div
-             style = {{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-             }}
-            >
-           
+            <div>
+                &nbsp;
+            </div>
             
             <Button 
                 variant="contained" color="primary">
                 Apply Filter
             </Button>
-            </div>
+
             </div>
         </>
     )

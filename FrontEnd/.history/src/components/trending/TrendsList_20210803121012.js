@@ -32,7 +32,6 @@ export const TrendsList = () => {
         <div>
             <div className="trends-for-you flex-space-between">
                 <h3 className="m-0">Tune the Model Hyperparameters!</h3>
-                <SettingsIcon />
             </div>
             <div className="trends">
                 {trends.map(trend => (<Trend trend={trend} />))}

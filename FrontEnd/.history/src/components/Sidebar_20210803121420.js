@@ -77,66 +77,24 @@ export const Sidebar = () => {
     return (
         <div>
             <div className="side-nav-header">
+                
+                <h1>
                 <Logo />
-                NewsTweet
+                    NewsTweet
+                </h1>
             </div>
-            <div className="side-nav-items">
+           
 
-                <ul className="p-0">
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <HomeIcon />
-                        </div>
-                        <span className="side-nav-text">Home</span>
+ 
 
-                    </li>
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <ExploreIcon />
-                        </div>
-                        <span className="side-nav-text">Explore</span>
-
-                    </li>
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <NotificationIcon />
-                        </div>
-                        <span className="side-nav-text">Notification</span>
-
-                    </li>
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <MessageIcon />
-                        </div>
-                        <span className="side-nav-text">Messages</span>
-
-                    </li>
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <BookmarkIcon />
-                        </div>
-                        <span className="side-nav-text">Bookmarks</span>
-
-                    </li>
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <ListsIcon />
-                        </div>
-                        <span className="side-nav-text">List</span>
-
-                    </li>
-
-                    <li className="side-nav-item flex-align-center">
-                        <div className="side-nav-item-holder">
-                            <MoreIcon />
+            <div>
+                &nbsp;
+            </div>
+            <div>
+                &nbsp;
+            </div>
+         
         
-                        </div>
-                        <span className="side-nav-text">More</span>
-                    </li>
-
-                </ul>
-                <div className="btn tweet-btn text-center">Tweet</div>
-            </div>
 
         </div>
     )

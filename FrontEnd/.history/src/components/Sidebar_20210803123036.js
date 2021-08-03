@@ -78,7 +78,6 @@ export const Sidebar = () => {
         <div>
             <div className="side-nav-header">
                 <Logo />
-                NewsTweet
             </div>
             <div className="side-nav-items">
 

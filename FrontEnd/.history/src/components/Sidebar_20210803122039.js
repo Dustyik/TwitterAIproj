@@ -78,7 +78,6 @@ export const Sidebar = () => {
         <div>
             <div className="side-nav-header">
                 <Logo />
-                NewsTweet
             </div>
             <div className="side-nav-items">
 
@@ -86,52 +85,51 @@ export const Sidebar = () => {
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <HomeIcon />
+                            <span className="side-nav-text">Home</span>
                         </div>
-                        <span className="side-nav-text">Home</span>
-
                     </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <ExploreIcon />
+                            <span className="side-nav-text">Explore</span>
                         </div>
-                        <span className="side-nav-text">Explore</span>
-
                     </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <NotificationIcon />
+                            <span className="side-nav-text">Notification</span>
                         </div>
-                        <span className="side-nav-text">Notification</span>
-
                     </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <MessageIcon />
+                            <span className="side-nav-text">Messages</span>
                         </div>
-                        <span className="side-nav-text">Messages</span>
-
                     </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <BookmarkIcon />
+                            <span className="side-nav-text">Bookmarks</span>
                         </div>
-                        <span className="side-nav-text">Bookmarks</span>
-
                     </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <ListsIcon />
+                            <span className="side-nav-text">List</span>
                         </div>
-                        <span className="side-nav-text">List</span>
-
                     </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
 
+                            <SmallAvatar width="22" image={profImageurl} />
+                            <span className="side-nav-text">Profile</span>
+                        </div>
+                    </li>
                     <li className="side-nav-item flex-align-center">
                         <div className="side-nav-item-holder">
                             <MoreIcon />
-        
+                            <span className="side-nav-text">More</span>
                         </div>
-                        <span className="side-nav-text">More</span>
                     </li>
 
                 </ul>

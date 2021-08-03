@@ -13,9 +13,9 @@ export const Trending = () => {
             <div>
 
                 <div className="trends-list m-0">
-                  
-                <TrendsList />
-                 
+                    {/*
+                    <TrendsList />
+                    */}
                 </div>
                 {/*
                 <div className="follow-list">
@@ -23,27 +23,24 @@ export const Trending = () => {
                 </div>
                 */}
 
-    
+            <span>
+                Tune the hyperparameters!
+            </span>
 
  
 
             <div>
                 &nbsp;
             </div>
-            <div
-             style = {{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-             }}
-            >
-           
+            <div>
+                &nbsp;
+            </div>
             
             <Button 
                 variant="contained" color="primary">
                 Apply Filter
             </Button>
-            </div>
+
             </div>
         </>
     )

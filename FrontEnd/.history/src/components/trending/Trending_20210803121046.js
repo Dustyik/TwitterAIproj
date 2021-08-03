@@ -30,13 +30,7 @@ export const Trending = () => {
             <div>
                 &nbsp;
             </div>
-            <div
-             style = {{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center"
-             }}
-            >
+            <div>
            
             
             <Button 

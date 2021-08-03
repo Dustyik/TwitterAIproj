@@ -173,7 +173,7 @@ ul {
 }
 
 .tweet-btn {
-    border-radius   : 1.5rem;
+    border-radius   : 3rem;
     font-size       : 1.5rem;
     padding         : 1rem;
     background-color: var(--sky-blue);

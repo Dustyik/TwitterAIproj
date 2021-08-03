@@ -82,7 +82,7 @@ html {
 }
 
 .side-nav-item-holder{
-    width: rem;
+    width: 1rem;
 }
 
 .avatar {
@@ -173,11 +173,11 @@ ul {
 }
 
 .tweet-btn {
-    border-radius   : 1.5rem;
-    font-size       : 1.5rem;
-    padding         : 1rem;
+    border-radius   : 4rem;
+    font-size       : 2rem;
+    padding         : 1.5rem;
     background-color: var(--sky-blue);
-    width           : 70%;
+    width           : 80%;
 }
 
 .follow-btn {
