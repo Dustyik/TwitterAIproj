@@ -7,6 +7,6 @@ ML_engine.py is our a file to parse our csv file and retrieve tweets for the fro
 
 To start the server:
 1. install the necessary python packages with the command:
-$ pip install -r requirements.txt
+$pip install -r requirements.txt
 2. start the server with the command:
-$ python server.py
+$python server.py

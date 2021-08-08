@@ -190,6 +190,7 @@ const TweetCard = (props) => {
 
                 <div style = {{display:"flex", justifyContent:"center", marginTop:10}}>
                 <Button 
+                    style={{ fontSize: '10px' }}
                     onClick = {tweetCardButtonClicked}
                     variant="contained" color="primary">
                     Make a guess!

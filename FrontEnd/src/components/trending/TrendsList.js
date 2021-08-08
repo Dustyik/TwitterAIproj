@@ -31,7 +31,7 @@ export const TrendsList = () => {
             tweets: HPD
         },
         {
-            name: '#The Models MSE',
+            name: '#Our Models MSE',
             topic: 'An average of the models mean squared error aggregated',
             tweets: MPD
         }
