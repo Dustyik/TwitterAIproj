@@ -91,7 +91,6 @@ export const Home = () => {
                 const hashtags = data.Hashtags
                 const mentions = data.Mentions
                 const timestamp = data.Timestamp
-                const time = data.time
                 // const userid = data.userid
                 
                 const modelRetweetPredictions = data["Final predicted Retweets"]
@@ -130,7 +129,6 @@ export const Home = () => {
                     individualRow.retweets = retweets[key]
                     individualRow.modelRetweetPredictions = modelRetweetPredictions[key]
                     individualRow.timestamp = timestamp[key]
-                    individualRow.time = time[key]
                     // individualRow.tweetid = tweetid[key]
                     individualRow.urls = urls[key]
                     // individualRow.userid = userid[key]

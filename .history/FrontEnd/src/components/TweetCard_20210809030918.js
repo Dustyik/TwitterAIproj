@@ -70,8 +70,8 @@ const TweetCard = (props) => {
     let tweetTimeStamp = tweet.timestamp
     if (tweetTimeStamp){
         console.log(tweetTimeStamp)
-        dateString = tweet.timestamp
-        timeString = tweet.time + ",00;        "
+        dateString = tweetTimeStamp.slice(0,10) + ", " + tweetTimeStamp.slice(26, 31)
+        timeString = tweetTimeStamp.slice(12,16)
     }
     // const dateString = tweet.timestamp.slie(0,9)
 

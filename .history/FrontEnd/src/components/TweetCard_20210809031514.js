@@ -71,7 +71,7 @@ const TweetCard = (props) => {
     if (tweetTimeStamp){
         console.log(tweetTimeStamp)
         dateString = tweet.timestamp
-        timeString = tweet.time + ",00;        "
+        timeString = tweet.time + ",00"
     }
     // const dateString = tweet.timestamp.slie(0,9)
 
