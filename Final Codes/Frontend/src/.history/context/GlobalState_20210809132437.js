@@ -28,8 +28,7 @@ const initialState = {
                 handle: '@WhiteHouse',
             },
             tweet: {
-                content: 'If you are seeing this tweet, it is because the front end is not retrieving tweets from the server. It is likely because you have not started the server. Do start the \
-                flask server before you start the front end! if you are sure the server has started, do refresh the page and tweets should be retrieved!',
+                content: 'On World Health Day, 2020, "we reaffirm our commitment to do our part to stop the spread of this virus, care for the sick, and protect the health and well-being of our fellow Americans."',
                 image: 'https://pbs.twimg.com/card_img/1246823270524973058/IbkZhS3u?format=jpg&name=small',
                 comments: '100',
                 retweets: '320',

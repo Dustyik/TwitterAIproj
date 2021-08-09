@@ -1,0 +1,142 @@
+import React, {useState, useContext} from 'react';
+import { Logo, HomeIcon, ExploreIcon, NotificationIcon, MessageIcon, BookmarkIcon, ListsIcon, MoreIcon } from '../images/svg/svgs';
+import { SmallAvatar } from '../images/avatars';
+import { Checkbox } from '@material-ui/core';
+import { Button } from '@material-ui/core';
+import * as API from "../apifunctions"
+import { GlobalContext } from '../context/GlobalState'
+import { uniqueNamesGenerator, Config, adjectives, colors, animals } from 'unique-names-generator';
+
+
+const SEARCH_MODELS = ["Tf-idf w Cosine Sim", "Tf-idf w Euclidean Dist"]
+
+export const Sidebar = () => {
+    const profImageurl = 'https://pbs.twimg.com/profile_images/1247964769669136385/KVCROk2D_bigger.jpg';
+    const [searchModelsLocalState, setSearchModelsLocalState] = useState([])
+
+    const {setSearchModels, searchModels, title, removeAllTweets, addTweet} = useContext(GlobalContext);
+
+    const checkBoxToggled = (event) => {
+        const id = event.id
+        const checkValue = event.checked
+
+        if (checkValue){
+            setSearchModels(id)
+            setSearchModelsLocalState(id)
+        }
+    }
+
+    const applyFilter = () => {
+        API.applySearchFilters(searchModels, title.title, title.id).then(
+            res => {
+                const data = JSON.parse(res.data);
+                removeAllTweets()
+                console.log(data)
+
+
+                const relevanceData = data.relevance
+                const tweetData = data.text
+                const tweetIdData = data.id
+                const relatedArticlesData = data.related_article
+                for (let i = 0; i < Object.keys(relevanceData).length; i++){
+                    let pxSize = 140 + i*3
+                    const newTweet = {
+                        name: uniqueNamesGenerator({dictionaries: [adjectives, colors, animals]}),
+                        tweet: tweetData[i],
+                        relevance: relevanceData[i],
+                        image: `https://placeimg.com/${pxSize}/${pxSize}/any`
+                    }
+                    addTweet(newTweet)
+                }
+            }
+        )
+    }
+
+    const createCheckBoxes = () => 
+        SEARCH_MODELS.map((e) => {
+
+            return (
+                <div>
+                <Checkbox
+                size = "medium"
+                id = {e}
+                onChange = {(e) => checkBoxToggled(e.target)}
+                checked = {searchModelsLocalState == e}
+                >
+                </Checkbox>
+                {e}
+                
+                </div>
+            )
+        }
+    )
+            
+
+    const checkBoxes = createCheckBoxes()
+
+    return (
+        <div>
+            <div className="side-nav-header">
+                <Logo />
+            </div>
+            <div className="side-nav-items">
+
+                <ul className="p-0">
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <HomeIcon />
+                        </div>
+                        <span className="side-nav-text">Home</span>
+
+                    </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <ExploreIcon />
+                        </div>
+                        <span className="side-nav-text">Explore</span>
+
+                    </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <NotificationIcon />
+                        </div>
+                        <span className="side-nav-text">Notification</span>
+
+                    </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <MessageIcon />
+                        </div>
+                        <span className="side-nav-text">Messages</span>
+
+                    </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <BookmarkIcon />
+                        </div>
+                        <span className="side-nav-text">Bookmarks</span>
+
+                    </li>
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <ListsIcon />
+                        </div>
+                        <span className="side-nav-text">List</span>
+
+                    </li>
+
+                    <li className="side-nav-item flex-align-center">
+                        <div className="side-nav-item-holder">
+                            <MoreIcon />
+        
+                        </div>
+                        <span className="side-nav-text">More</span>
+                    </li>
+
+                </ul>
+                <div className="btn tweet-btn text-center">Tweet</div>
+            </div>
+
+        </div>
+    )
+}
